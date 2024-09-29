@@ -1,7 +1,7 @@
-import Say from "./component/3장. 컴포넌트/Say";
+import EventPractice from "./component/4장. 이벤트 핸들링/EventPractice";
 
 const App = () => {
-  return <Say />;
+  return <EventPractice />;
 };
 
 export default App;

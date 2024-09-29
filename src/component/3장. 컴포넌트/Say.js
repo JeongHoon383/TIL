@@ -7,6 +7,10 @@ const Say = () => {
 
   const [color, setColor] = useState("black");
 
+  document.getElementById("root").addEventListener("click", () => {
+    console.log("root");
+  });
+
   // // 객체 다루기
   // const object = { a: 1, b: 2, c: 3 };
   // const nextObject = { ...object, b: 2 }; // 사본을 만들어서 b 값만 덮어 쓰기
