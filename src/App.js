@@ -1,7 +1,10 @@
-import EventPractice from "./component/4장. 이벤트 핸들링/EventPractice";
+import { Component } from "react";
+import ValidationSample from "./component/5장. ref: DOM에 이름 달기/ValidationSample";
 
-const App = () => {
-  return <EventPractice />;
-};
+class App extends Component {
+  render() {
+    return <ValidationSample />;
+  }
+}
 
 export default App;
