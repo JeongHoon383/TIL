@@ -1,14 +1,11 @@
 import { Component } from "react";
-import ScrollBox from "./component/5장. ref: DOM에 이름 달기/ScrollBox";
+import IterationSample from "./component/6장. 컴포넌트 반복/IterationSample";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
-        <button onClick={() => this.scrollBox.scrollToBottom()}>
-          맨 밑으로
-        </button>
+        <IterationSample />
       </div>
     );
   }
