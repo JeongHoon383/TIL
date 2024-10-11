@@ -1,20 +1,20 @@
+import { useRef, useState } from "react";
+
 const IterationSample = () => {
-  let numbers = [1, 2, 3, 4, 5];
+  const inputRef = useRef();
 
-  let processed = numbers.map((num) => {
-    return num * num;
-  });
+  const [names, setNames] = useState([
+    { id: 1, text: "눈사람" },
+    { id: 2, text: "얼음" },
+    { id: 3, text: "눈" },
+    { id: 4, text: "바람" },
+  ]);
+  const [inputText, setInputText] = useState("");
+  const [nextId, setNextId] = useState(5);
 
-  console.log(processed);
+  const nameList = names.map((name) => <li key={name.id}>{name.text}</li>);
 
-  return (
-    <ul>
-      <li>눈사람</li>
-      <li>얼음</li>
-      <li>눈</li>
-      <li>바람</li>
-    </ul>
-  );
+  return <ul>{nameList}</ul>;
 };
 
 export default IterationSample;
