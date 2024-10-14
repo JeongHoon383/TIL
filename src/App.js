@@ -1,14 +1,14 @@
-import { Component } from "react";
-import LifeCycleSample from "./component/7장. 컴포넌트의 라이프사이클 메서드/LifeCycleSample";
+import { useState } from "react";
+import Counter from "./component/8장. Hooks/Counter";
+import Info from "./component/8장. Hooks/Info";
+import Average from "./component/8장. Hooks/Average";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <LifeCycleSample />
-      </div>
-    );
-  }
-}
+const App = () => {
+  return (
+    <>
+      <Average />
+    </>
+  );
+};
 
 export default App;
