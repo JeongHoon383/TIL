@@ -1,12 +1,9 @@
-import { useState } from "react";
-import Counter from "./component/8장. Hooks/Counter";
-import Info from "./component/8장. Hooks/Info";
-import Average from "./component/8장. Hooks/Average";
+import SassComponent from "./component/9장. 컴포넌트 스타일링/SassComponent";
 
 const App = () => {
   return (
     <>
-      <Average />
+      <SassComponent />
     </>
   );
 };
