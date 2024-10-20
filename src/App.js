@@ -1,14 +1,7 @@
-import { Component } from "react";
-import StyledComponent from "./component/9장. 컴포넌트 스타일링/StyledComponent";
+import TodoTemplate from './pages/10장. TodoList 만들기/components/TodoTemplate';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <StyledComponent />
-      </div>
-    );
-  }
-}
+const App = () => {
+  return <TodoTemplate>Todo App을 만들자!</TodoTemplate>;
+};
 
 export default App;
